@@ -10,6 +10,7 @@ import VueTable from "../components/VueTable";
 import Radar from "../components/Radar";
 import EchartView from "../components/EchartView";
 import Test from "../components/Test";
+import HelloWorld from "../components/HelloWorld";
 // 初始化 VueRouter 插件
 Vue.use(VueRouter)
 
@@ -71,5 +72,11 @@ export default new VueRouter({
       name:'Test',
       component:Test
     },
+    {
+      path: '/HelloWorld',
+      name: 'HelloWorld',
+      component: HelloWorld
+    }
+
   ]
 })

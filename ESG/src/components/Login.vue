@@ -4,7 +4,7 @@
     <b-card class="card-center" style="box-shadow: 0 10px 10px gray">
       <b-row>
         <b-col>
-          <img src="../assets/new2.jpg" width="600px" height="400px" alt="can't find">
+          <img src="../assets/new2.jpg" width="500px" height="400px" alt="can't find">
         </b-col>
         <hr class="my-4" >
         <b-col>

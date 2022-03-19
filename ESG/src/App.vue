@@ -7,10 +7,10 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-nav-item to="/Home">首页</b-nav-item>
-            <b-nav-item to="/EchartView">图表</b-nav-item>
-            <b-nav-item to="/Test">Test</b-nav-item>
+            <b-nav-item to="/Test">ESG查询</b-nav-item>
             <b-nav-item to="/Table">数据估值</b-nav-item>
-            <b-nav-item to="/VueTable">ESG查询</b-nav-item>
+            <b-nav-item to="/HelloWorld">股票</b-nav-item>
+            <b-nav-item to="/Result">数据结果</b-nav-item>
             <b-nav-item @click="judge">我的个人</b-nav-item>
             <b-button type="link" variant="outline-primary" v-model="$store.state.loginState" @click="onButton">{{$store.state.loginState}}</b-button>
           </b-navbar-nav>

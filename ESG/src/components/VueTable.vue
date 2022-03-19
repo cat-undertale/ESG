@@ -1,4 +1,5 @@
 <template>
+
   <div class="table">
     <el-row>
       <el-col :span="6">
@@ -8,7 +9,7 @@
         <el-button type="success" @click="search">搜索</el-button>
       </el-col>
     </el-row>
-    <el-table :data="list">
+    <el-table :data="list" @row-click="clickData">
 
       <el-table-column label="股票代码" prop="A"></el-table-column>
       <el-table-column label="组合" prop="B"></el-table-column>
@@ -18,6 +19,7 @@
       <el-table-column label="S得分" prop="S"></el-table-column>
       <el-table-column label="G得分" prop="G"></el-table-column>
       <el-table-column label="ESG得分" prop="ESG"></el-table-column>
+
     </el-table>
     <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange"
                    :current-page="page" :page-sizes="[1, 2,5, 10]" :page-size="limit"
@@ -518,6 +520,9 @@ export default {
     this.pageList()
   },
   methods: {
+    clickData(row, event, column) {
+      console.log(row,  event,  column)
+    },
     pageList () {
       // 发请求拿到数据并暂存全部数据,方便之后操作
       this.data = listJson.list

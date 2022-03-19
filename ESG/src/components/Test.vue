@@ -1,10 +1,17 @@
 <template>
+
   <div>
     <div :id="radarChart" style="width: 350px; height: 280px"></div>
+    <div>
+      <VueTable></VueTable>
+    </div>
   </div>
+
 </template>
 <script>
 import * as echarts from "echarts";
+import Home from "./Home";
+import VueTable from "./VueTable";
 const idGen = () => {
   return new Date().getTime();
 };
@@ -20,6 +27,7 @@ export default {
     },
   },
   name: "RadarChart",
+  components: {VueTable},
   data() {
     return {
       radarChart: null,

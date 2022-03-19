@@ -2,7 +2,7 @@
 <!--  <div id="myChart" :style="{width: '300px', height: '300px'}"></div>-->
   <div>
     <h1 class="text-center">分析结果</h1>
-    <p class="text-center">本产品属于数据资产管理技术领域，采用数据资产价值评估模型及市场法进行估值分析。</p>
+    <p class="text-center">本产品采用ESG评估模型及市场法进行估值分析。</p>
     <b-card bg-variant="light" class="card_center" style="box-shadow: 0 10px 10px gray">
       <b-container>
         <b-row>
@@ -59,7 +59,7 @@ export default {
   data(){
     return{
       result:{
-        price:2.0,
+        price:2000.0,
         rize:0.12,
         decline:0.08,
         average:11.8
@@ -102,11 +102,11 @@ export default {
             type: 'pie',
             radius: '55%',
             data:[
-              {value:235, name:'视频广告'},
-              {value:274, name:'联盟广告'},
-              {value:310, name:'邮件营销'},
-              {value:335, name:'直接访问'},
-              {value:400, name:'搜索引擎'}
+              {value:235, name:'污染排放'},
+              {value:274, name:'自然资源'},
+              {value:310, name:'废物回收'},
+              {value:335, name:'股权结构'},
+              {value:400, name:'产品质量'}
             ],
             roseType: 'angle',
             label: {
@@ -125,7 +125,7 @@ export default {
             },
             itemStyle: {
               normal: {
-                color: '#436cc2',
+                color: '#43c27a',
                 shadowBlur: 200,
                 shadowColor: 'rgb(179,179,236)'
               }
